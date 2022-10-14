@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<link href="webjars/bootstrap/5.2.0/css/bootstrap.min.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <title>Url Shorter</title>
+</head>
+<body class="text-center">
+<script src="webjars/bootstrap/5.2.0/js/bootstrap.min.js"></script>
+
+<div class="text-center">
+    <h1>Short Url Creation</h1>
+    <form action="#" th:action="@{/create}" method="post" th:object="${producturl}">
+        <label>reBuy Product Url</label>
+        <input class="w-50 p-3" type="text" th:field="*{fullUrl}" /><br/>
+
+        <button type="submit">Create Short Url</button>
+    </form>
+</div>
+
+</body>
+</html>
